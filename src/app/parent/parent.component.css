@@ -1,0 +1,28 @@
+.wrapper {
+    margin-top: 50px;
+}
+
+.child{
+    margin-bottom: 20px;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+}
+
+.button-container{
+    display: flex;
+    gap: 10px;
+}
+
+.box {
+    width: 80%;
+    display: flex;
+    margin: 0 10%;
+    box-shadow: 0 27px 87px rgba(0, 0, 0, 0.37);
+    border-radius: 25px;display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

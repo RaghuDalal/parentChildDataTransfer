@@ -1,0 +1,26 @@
+<!--Box Design-->
+<div class="wrapper">
+    <div class="box">
+
+        <!--Tag for aligning the elements in the box-->
+
+            <!--Heading-->
+            <div class="container">
+                <p class="display-3 m-3 title">Parent Component</p>
+                <hr>
+            </div>
+
+            <!--Child-->
+            <div class="m5 child">
+                <ng-container *ngFor="let item of dataSubject | async">
+                    <child #childComponent [id]="item.id" [name]="item.name" [money]="item.money"></child>
+                    <div class="button-container">
+                      <button type="button" class="btn btn-primary" (click)="sendMoney(10, item)">Send Money to {{ item.name }}</button>
+                      <button type="button" class="btn btn-danger" (click)="tellChild(item.id)">Get Money from {{ item.name }}</button>
+                    </div>
+                    <hr>
+                  </ng-container>
+            </div>
+    </div>
+
+</div>
